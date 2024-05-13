@@ -1,0 +1,20 @@
+<view>
+  <van-cell-group>
+    <van-field model:value="{{ userFrom }}" placeholder="请输入用户名" border="{{ false }}" label="发件人手机" />
+    <van-field model:value="{{ userTo }}" placeholder="请输入用户名" border="{{ false }}" label="收件人手机"  />
+    <van-field model:value="{{ posFrom }}" placeholder="请输入发件地址" border="{{ false }}" label="发件地址"  />
+    <van-field model:value="{{ posTo }}" placeholder="请输入收件地址" border="{{ false }}" label="收件地址" />
+    <van-field model:value="{{ weight }}" placeholder="请输入重量" border="{{ false }}" label="包裹重量(kg)"  />
+    <van-field model:value="{{ company }}" placeholder="请输入公司名" border="{{ false }}" label="快递公司" />
+  </van-cell-group>
+  <view id="radio">
+    <van-radio-group value="{{ isDoorTake }}" direction="horizontal" bind:change="doorTakeChange">
+      <van-radio name="1">上门取件</van-radio>
+      <van-radio name="0">去驿站寄件</van-radio>
+    </van-radio-group>
+  </view>
+
+  <view id="submit">
+    <van-button round size="large" type="info" bindtap="doPost">确认提交</van-button>
+  </view>
+</view>

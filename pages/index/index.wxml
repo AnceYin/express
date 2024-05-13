@@ -1,0 +1,32 @@
+<view class="bg">
+  <view id="top">
+    <view class="container" id="get" bindtap="toGetPage">
+      <block>取包裹</block>
+      <van-icon name="arrow" />
+    </view>
+    <view class="container" id="send" bindtap="toPostPage">
+      <block>寄包裹</block>
+      <van-icon name="arrow" />
+    </view>
+    <view class="container" id="identity" bindtap="toIDPage">
+      <block>身份码</block>
+      <van-icon name="arrow" />
+    </view>
+  </view>
+  <view id="mid">
+    <view class="tile">寄件记录</view>
+    <view class="card">
+    <view>
+      <view class="tile" wx:for="{{list}}" wx:key="list">
+        <image src="https://imgsa.baidu.com/forum/pic/item/ac6eddc451da81cbea644e2c5c66d01608243155.jpg" class="pic"></image>
+        <view class="itemList">
+          <text wx:if="{{item.IsSinged}}">已签收</text>
+          <text wx:else>未签收</text>
+          <view class="company">迅达快递: {{item.arrive_time}} 到达</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  </view>
+</view>

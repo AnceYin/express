@@ -1,0 +1,11 @@
+#submit {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#radio {
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+}

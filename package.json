@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@vant/weapp": "^1.10.4",
+    "qrcodejs2": "^0.0.2"
+  }
+}

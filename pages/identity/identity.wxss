@@ -1,0 +1,18 @@
+#bg {
+  height: 100%;
+  background-color: blue;
+  padding-top: 6%;
+}
+
+#card {
+  background-color: #fff;
+  height: 50%;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.pic {
+  height: 100%;
+  width: 100%;
+}

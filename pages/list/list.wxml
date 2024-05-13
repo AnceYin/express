@@ -1,0 +1,23 @@
+<view class="bg">
+  <view class="card">
+    <view>
+      <view class="tile" wx:for="{{list}}" wx:key="list">
+        <image src="https://imgsa.baidu.com/forum/pic/item/ac6eddc451da81cbea644e2c5c66d01608243155.jpg" class="pic"></image>
+        <view class="itemList">
+          <view class="takeCode">{{item.take_code}}</view>
+          <view class="phone">手机尾号{{item.sender_phone}}的包裹</view>
+          <view class="company">迅达快递: {{item.arrive_time}} 入站</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view id="btns">
+    <view id="btnWarpper">
+      <van-button round size="large" type="info" bindtap="toIDPage">身份码取件</van-button>
+      <van-button round size="large" type="default">
+        <van-icon name="share" />找人代取
+      </van-button>
+    </view>
+
+  </view>
+</view>

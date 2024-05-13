@@ -1,0 +1,6 @@
+<view id="bg">
+
+  <view id="card">
+    <image class="pic" src="{{base64Code}}"></image>
+  </view>
+</view>

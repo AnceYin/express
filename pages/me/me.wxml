@@ -1,0 +1,14 @@
+<view class="top">
+
+</view>
+
+<view class="head">
+  <view class="head-item head-head">
+    <van-image class="head-img" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" wx:if="{{islogin}}"/>
+    <van-icon name="user-circle-o" color="red" size="89px" wx:if="{{!islogin}}" bindtap="tologin"/>
+  </view>
+  <view class="head-item">
+    {{userInfo.Nickname}}
+  </view>
+  <image class="setting" mode="aspectFit" src="../../image/others/shezhi-xianxing.png"></image>
+</view>

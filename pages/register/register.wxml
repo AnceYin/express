@@ -1,0 +1,8 @@
+<van-cell-group>
+  <van-field model:value="{{ phone }}" placeholder="请输入手机号" clearable label="手机号" border="{{ false }}" />
+  <van-field model:value="{{ pass }}" placeholder="请输入密码" clearable label="密码" border="{{ false }}"  />
+  <van-field model:value="{{ nickname }}" placeholder="请输入昵称" clearable label="昵称" border="{{ false }}"/>
+</van-cell-group>
+<view class="bottom">
+  <van-button round type="info" bindtap="doRegister">确定</van-button>
+</view>

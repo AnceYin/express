@@ -1,0 +1,57 @@
+.bg {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+.card {
+  border-radius: 10px;
+  background-color: white;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.pic {
+  width: 55px;
+  height: 55px;
+  border: gray 18px solid;
+  border-radius: 5px;
+}
+
+.tile {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.takeCode {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.phone {
+  font-size: smaller;
+}
+
+.company {
+  color: gray;
+  font-size: smaller;
+}
+
+.itemList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#btns {
+  width: 100%;
+  position: fixed;
+  bottom: 5%;
+}
+
+#btnWarpper {
+  width: 75%;
+  margin: 0 auto;
+}
